@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+"icons": {
+      "16": "jaune16.png",
+      "48": "jaune48.png",
+      "128": "jaune128.png"
+    },
+  "name": "extension 27-02-2020",
+  "description": "change icons + popup hate alert",
+  "version": "1.0.0",
+
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;",
+
+
+   "browser_action": {
+      "popup":"popup.html",
+      "default_icon": {
+        "16": "jaune16.png",
+      "48": "jaune48.png",
+      "128": "jaune128.png"
+      }
+    },
+
+  "background": {
+
+    "scripts": ["firebase.min.js","background.js"],
+    "persistent": false
+    
+  },
+
+  "content_scripts": [
+    { 
+      "run_at": "document_start",
+      "matches": ["<all_urls>"],
+      "js": ["jquery-1.11.3.min.js","firebase.min.js","content.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": ["popup.html", "popup.js"],
+   "options_page": "options.html",
+
+    "permissions": ["activeTab","declarativeContent","storage","tabs"]
+}
