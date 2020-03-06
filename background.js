@@ -1,10 +1,11 @@
 var config = {
-  apiKey: "AIzaSyBz01LRGY-LEqmkp_gqyAy8I1jAbGqt23Y",
-    authDomain: "test1909-5eca8.firebaseapp.com",
-    databaseURL: "https://test1909-5eca8.firebaseio.com",
-    projectId: "test1909-5eca8",
-    storageBucket: "test1909-5eca8.appspot.com",
-    messagingSenderId: "902654891927",
+  apiKey: "AIzaSyC5OFdK7eXcl4YzCcx0qWXRohA-Dd-kug4",
+    authDomain: "test1-qmlbck.firebaseapp.com",
+    databaseURL: "https://test1-qmlbck.firebaseio.com",
+    projectId: "test1-qmlbck",
+    storageBucket: "test1-qmlbck.appspot.com",
+    messagingSenderId: "6405314902",
+    appId: "1:6405314902:web:bd66b1a8d3eecf5c8edef7"
 };
 
 
